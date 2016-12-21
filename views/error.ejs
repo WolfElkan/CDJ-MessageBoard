@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<% errors = errors.length ? errors : [errors] %>
+</head>
+<body>
+<h1>DB Error</h1>
+<h2>Mongoose encountered the following errors while accessing the database:</h2>
+<ol>
+	<% for (e in errors) {
+	<li><%= errors[e] %></li>
+	<% } %>
+</ol>
+</body>
+</html>
